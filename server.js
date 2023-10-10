@@ -508,7 +508,7 @@ app.get('/api/books/:bookId/comments', async (req, res) => {
   }
 });
 
-app.get("*", (req, res) => {
+app.get("/", (req, res) => {
   res.redirect("/login");
 });
 
